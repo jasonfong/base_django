@@ -46,7 +46,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   config.vm.provision :chef_solo do |chef|
     chef.run_list = [
       "recipe[git]",
-      "recipe[base_django::default]"
+      "recipe[django_project]"
     ]
   end
 
