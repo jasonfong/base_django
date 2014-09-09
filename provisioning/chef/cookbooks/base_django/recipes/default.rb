@@ -9,7 +9,6 @@ application 'base_django' do
   django do
     requirements 'requirements.txt'
     local_settings_file 'local_settings.py'
-    settings_template 'settings.py.erb'
   end
 
   gunicorn do
